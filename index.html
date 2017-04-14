@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>A Modern Front-End Workflow</title>
+		<meta name="description" content="Slides for 'A Modern Front-End Workflow 2017'">
+		<meta name="author" content="Umar Hansa">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/blood.css" id="theme">
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<link rel="stylesheet" href="css/custom.css">
+	</head>
+
+	<body>
+<div class="reveal">
+<div class="slides">
+
+<section>
+	<h1>A Modern Front-End Workflow</h1>
+	<h4>Render Conf 2017</h4>
+
+	<p>
+		<a href="https://www.youtube.com/watch?v=v5r_n6Tq0uk" target="_blank">Want to watch a video of this talk?</a>
+	</p>
+</section>
+
+<section>
+	<h2>Thanks to</h2>
+	<img src="img/springer-nature-logo.png" alt="Springer Nature (Company)">
+	<span>We're hiring!</span>
+</section>
+
+<section>
+	<h2>What I like...</h2>
+	<ul class="what-i-like">
+		<li>
+			<span class="emoji">🕔</span> People leave on time</li>
+		<li>
+			<span class="emoji">🖥</span> Hack days are not just fixing technical debt</li>
+		<li>
+			<span class="emoji">👐</span> Open Source &nbsp; <a target="_blank" href="https://github.com/springernature/">github.com/springernature</a></li>
+		<li>
+			<span class="emoji">🕸</span> <a target="_blank" href="https://github.com/springernature/frontend/">github.com/springernature/frontend</a></li>
+	</ul>
+</section>
+
+<section>
+	<h2>
+		Twitter:
+		<a target="_blank" href="https://twitter.com/umaar">
+			@umaar
+		</a>
+	</h2>
+</section>
+
+
+
+<section>
+	<h2>Dev Tips: DevTools gifs in your inbox </h2>
+	<h4>140 tips posted so far!</h4>
+
+	<h3>
+		<a href="https://umaar.com/dev-tips" target="_blank">umaar.com/dev-tips</a>
+	</h3>
+</section>
+
+
+<section>
+	<h2>🎊 New Project 🎊</h2>
+
+	<h1>Modern DevTools</h1>
+
+	<h3>
+		<a target="_blank" href="https://moderndevtools.com/">moderndevtools.com</a>
+	</h3>
+</section>
+
+<section>
+	<h2>Why this talk?</h2>
+
+	<ul>
+		<li>Move past <code>console.log</code>!</li>
+		<li>Understand the state of DevTools in 2017</li>
+		<li>More efficient development &amp; debugging</li>
+	</ul>
+</section>
+
+<section>
+	<h2>What will we cover?</h2>
+
+	<ul class="what-cover">
+		<li><span class="emoji">🚀</span>Performance</li>
+		<li><span class="emoji">🔎</span>Accessibility</li>
+		<li><span class="emoji">🆕</span>What's new in DevTools</li>
+	</ul>
+</section>
+
+
+
+<section>
+	<h2>
+		Let's start...
+	</h2>
+</section>
+
+
+<section>
+	<h2>
+		Performance 🚀
+	</h2>
+
+</section>
+
+<section data-background="img/misc/github-issues.png"></section>
+
+<section>
+	<h3><a href="https://github.com/umaar/dev-tips/issues/27" target="_blank">github.com/umaar/dev-tips/issues/27</a></h3>
+</section>
+
+
+
+<section>
+	<ul class="slide-long-list">
+		<li>FPS Meter</li>
+		<li>Paint Profiler</li>
+		<li>Paint Flashing</li>
+		<li>Timeline Recorder</li>
+		<li>JavaScript Source Code Profiling</li>
+		<li>Network Timing Breakdown</li>
+		<li>Console Timing</li>
+		<li>Filmstrip recording</li>
+		<li>perf/audits</li>
+		<li>Scroll Bottlenecks</li>
+		<li>JavaScript Heap Snapshots</li>
+		<li>CPU Profiler</li>
+		<li>Performance Audits</li>
+		<li>Layers Panel</li>
+		<li>Layer Border Outlines</li>
+	</ul>
+</section>
+
+
+<section>
+	<h2>
+		Console Violations
+	</h2>
+</section>
+
+<section data-background="img/console/violation-how-to.png"></section>
+<section data-background="img/console/violation1.png"></section>
+<section data-background="img/console/violation2.png"></section>
+
+<section>
+	<h3>Example violations</h3>
+	<ul>
+		<li><em>Forced reflow is a likely performance bottleneck.</em></li>
+		<li><em>Idle callback execution extended beyond deadline by 100ms</em></li>
+		<li><em>Long JavaScript handler took 100ms</em></li>
+		<li><em>Not optimized" JavaScript profiler bailout</em></li>
+	</ul>
+</section>
+
+
+<section>
+	<h2>
+		Timeline Flow 📈
+	</h2>
+
+	<p>
+		Hello online viewer. This part of the talk was a live demo.
+		<a href="https://umaar.com/dev-tips/138-timeline-flow/" target="_blank">You can still see the feature here</a>
+	</p>
+</section>
+
+
+
+<section>
+	<h2>perf/audits &nbsp; 🕵️</h2>
+	<h4><a target="_blank" href="https://github.com/perfs/audits/issues">github.com/perfs/audits</a></h4>
+</section>
+
+<section>
+	<h2>googleChrome/discovery &nbsp; 🔮</h2>
+	<h4><a target="_blank" href="https://github.com/GoogleChrome/discovery/issues/1">github.com/googleChrome/discovery</a></h4>
+</section>
+
+
+
+<section>
+	<h2>Accessibility &nbsp; 🔎</h2>
+</section>
+
+<section data-background="img/a11y-extension.png"></section>
+<section data-background="img/a11y-extension-audit-preview.png"></section>
+<section data-background="img/a11y-extension-audit-example.png"></section>
+<section data-background="img/a11y-extension-audit-example-pt-2.png"></section>
+<section data-background="img/a11y-extension-audit-example-pt-3.png"></section>
+<section data-background="img/a11y-extension-chrome-docs.png"></section>
+
+
+
+<section>
+	<img src="img/poor-contrast-example.png" style="width: 50%;" alt="">
+</section>
+
+<section>
+	<img src="img/contrast-line-ratio.png" alt="">
+</section>
+
+
+
+<section data-background-video="vid/contrast-line-ratio.mp4"></section>
+
+<section>
+	<h2>Accessibility Inspection</h2>
+	<p>Without an extension...</p>
+</section>
+
+<section>
+	<small>Say hi to the</small>
+	<h2>Accessibility Inspector</h2>
+</section>
+
+<section data-background="img/a11y-experiment.png"></section>
+<section data-background="img/a11y-inspector-overview.png"></section>
+<section data-background="img/a11y-inspector-pt1.png"></section>
+<section data-background="img/a11y-inspector-pt2.png"></section>
+<section data-background="img/a11y-inspector-pt3.png"></section>
+<section data-background="img/a11y-inspector-pt4.png"></section>
+
+<section>
+	<h2>
+		What's new in DevTools 🆕
+	</h2>
+</section>
+
+
+<section data-background="img/misc/what-is-new.png"></section>
+
+<section>
+	<h2>CSS Variable Support</h2>
+</section>
+
+<section data-background-video="vid/sources/css-variable-source-panel.mp4"></section>
+
+<section>
+	<h2>Object Previews</h2>
+</section>
+
+<section data-background="img/console/object-preview-before.png"></section>
+<section data-background="img/console/object-preview-after.png"></section>
+
+<section>
+	<h2>Smart Console 💡</h2>
+</section>
+
+<section data-background-video="vid/console/smart-console.mp4"></section>
+<section data-background-video="vid/console/smart-console-part-two.mp4"></section>
+
+<section>
+	<h2>Docking Support 🔼 🔽 </h2>
+</section>
+
+<section data-background-video="vid/misc/docking.mp4"></section>
+
+
+<section>
+	<h2>Server Timing ⏲</h2>
+</section>
+
+<section data-background="img/network/server-timing.png"></section>
+
+<section data-background="img/network/server-timing-npm.png"></section>
+
+<section>
+	<h2>Code Coverage </h2>
+</section>
+
+<section data-background-video="vid/misc/coverage.mp4"></section>
+
+<section>
+	<h2>Continue to Location 🔀 </h2>
+</section>
+
+<section data-background-video="vid/sources/continue-to-location.mp4"></section>
+<section data-background="img/sources/continue-to-location.png"></section>
+
+<section>
+	<h2>Lighthouse 🏠</h2>
+</section>
+
+<section data-background-video="vid/misc/lighthouse.mp4"></section>
+
+<section>
+	<h1>
+		Keeping it in the browser and the terminal 💻
+	</h1>
+
+	<p>
+		Hello online viewer. This part of the talk was a live demo.
+		<a href="https://umaar.com/dev-tips/139-devtools-terminal-linting/" target="_blank">You can still see the feature here</a>
+	</p>
+</section>
+
+<section>
+	<h2>
+		Coding with Persistence 2.0
+	</h2>
+
+	<p>
+		Hello online viewer. This part of the talk was a live demo.
+		<a href="https://umaar.com/dev-tips/123-workspaces-2-0/" target="_blank">You can still see the feature here</a>
+	</p>
+</section>
+
+<section>
+	<h2>General Recap ♻</h2>
+	<ul>
+		<li>Use Timeline Flow to understand event relationships</li>
+		<li>Accessibility Inspection - Check your pages!</li>
+		<li>Locate unnecessarily loaded code with coverage tooling</li>
+		<li>Code in the browser with Persistence 2.0</li>
+	</ul>
+</section>
+
+<section>
+	<h1>Thank you</h1>
+	<ul>
+		<li>
+			<h4>
+				Course Website - <a href="https://moderndevtools.com/">moderndevtools.com</a>
+			</h4>
+		</li>
+
+		<li>
+			<h4>
+				DevTools tips and tricks in your inbox - <a target="_blank" href="https://umaar.com/dev-tips/">umaar.com/dev-tips</a>
+			</h4>
+		</li>
+
+		<li>
+			<h4>
+				Twitter - <a target="_blank" href="https://twitter.com/umaar">@umaar</a>
+			</h4>
+		</li>
+	</ul>
+
+</section>
+
+
+
+</div> <!-- .slides -->
+
+</div><!-- .reveal -->
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			Reveal.initialize({
+				controls: false,
+				progress: true,
+				history: true,
+				center: true,
+				slideNumber: true,
+				width: 1920,
+				height: 1080,
+				transition: 'fade',
+
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
