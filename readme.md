@@ -5,7 +5,7 @@
 
 ### Mentioned in video
 
-* [Umaar's Twiiter Tips](https://twitter.com/umaar)
+* [Umaar's Twitter Tips](https://twitter.com/umaar)
 * [github.com/perfs/audits](https://github.com/perfs/audits/issues)
 * [Production Web Apps Performance Study](https://github.com/GoogleChrome/discovery/issues)
 * [Accessibility Developer Tools](https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb?hl=en)
